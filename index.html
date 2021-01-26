@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube-clone</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <script src="/src/main.js" defer></script>
+  <script src="https://kit.fontawesome.com/5a08c7fbff.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <i class="fab fa-youtube"></i>
+      <span class="title">YouTube</span>
+    </div>
+    <div class="icons">
+      <i class="fas fa-search"></i>
+      <i class="fas fa-ellipsis-v"></i>
+    </div>
+  </header>
+
+  <!--video player-->
+  <section class="video-player">
+    <video controls src="/video/christmasVideo.mp4"></video>
+  </section>
+
+  <!--video discription-->
+  <section class="video-discription">
+    <div class="info">
+      <ul class="hashtags">
+        <li>#파리 여행 노래</li>
+        <li>#휴식 노래</li>
+        <li>#여행/li>
+      </ul>
+      <div class="titleAndBtn">
+        <span class="title">The Christmas Times</span>
+        <button class="moreBtn">
+          <i class="fas fa-caret-down"></i>
+        </button>
+      </div>
+      <div class="views">
+        <span class="views">조회수 2,479,070회</span>
+      </div>
+    </div>
+    <ul class="action">
+      <li>
+        <button>
+          <i class="fas fa-thumbs-up"></i>
+          <span class="count">15</span>
+        </button>
+      </li>
+      <li>
+        <button>
+          <i class="fas fa-thumbs-down"></i>
+          <span class="count">15</span>
+        </button>
+      </li>
+      <li>
+        <button>
+          <i class="fas fa-share"></i>
+          <span class="shareText">공유</span>
+        </button>
+      </li>
+      <li>
+        <button>
+          <i class="fas fa-plus"></i>
+          <span class="saveText">저장</span>
+        </button>
+      </li>
+      <li>
+        <button>
+          <i class="fas fa-flag"></i>
+          <span class="reportText">신고</span>
+        </button>
+      </li>
+    </ul>
+    <div class="channel">
+      <div class="metadata">
+        <img src="/img/이모지.png" alt="profileImg" class="profileImg">
+        <div class="profile">
+          <span class="name">mimi</span>
+          <span class="subscribers">1M subscribe</span>
+        </div>
+      </div>
+      <button class="subscribe">Subscribe</button>
+    </div>
+  </section>
+
+  <!--side Media-->
+  <section class="upNext">
+    <span class="title">Up next</span>
+    <ul>
+      <li class="item">
+        <img src="/img/1.jpg" alt="Deer photo">
+        <div class="info">
+          <span class="title">
+            Deer's routine
+          </span>
+          <span class="side-author">dongdong</span>
+          <span class="side-views">57K views</span>
+        </div>
+        <button class="moreBtn">
+          <i class="fas fa-ellipsis-v"></i>
+        </button>
+      </li>
+      <li class="item">
+        <img src="/img/2.jpg" alt="Deer photo">
+        <div class="info">
+          <span class="title">
+            Girl and horse
+          </span>
+          <span class="side-author">Rucy</span>
+          <span class="side-views">15K views</span>
+        </div>
+        <button class="moreBtn">
+          <i class="fas fa-ellipsis-v"></i>
+        </button>
+      </li>
+      <li class="item">
+        <img src="/img/3.jpg" alt="Deer photo">
+        <div class="info">
+          <span class="title">
+            Snow-loving puppy
+          </span>
+          <span class="side-author">Tomas</span>
+          <span class="side-views">81K views</span>
+        </div>
+        <button class="moreBtn">
+          <i class="fas fa-ellipsis-v"></i>
+        </button>
+      </li>
+    </ul>
+  </section>
+</body>
+
+</html>
