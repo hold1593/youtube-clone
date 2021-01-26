@@ -14,8 +14,8 @@
 
   /* Font Size */
   --font-large: 18px;
-  --font-medium: 14px;
-  --font-small: 12px;
+  --font-medium: 16px;
+  --font-small: 13px;
   --font-micro: 10px;
 }
 
@@ -27,6 +27,17 @@
 
 body {
   font-family:  'Roboto', sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+
+button,
+button:focus {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-color: var(--white-color);
 }
 
 /* Header */
@@ -60,4 +71,35 @@ header .icons .fa-search {
   width: 100%;
   height: 100%;
   max-width: 1000px;
+}
+
+/* Vidio discription */
+.video-discription {
+  padding: var(--padding);
+}
+.video-discription .info .hashtags {
+  display: flex;
+  font-size: var(--font-small);
+  color: var(--blue-color);
+}
+.video-discription .info .hashtags li {
+  margin-right: var(--padding);
+}
+.video-discription .info .titleAndBtn {
+  display: flex;
+}
+.video-discription .info .titleAndBtn .title{
+  font-size: var(--font-medium);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin-right: var(--padding);
+}
+.video-discription .info .titleAndBtn .moreBtn {
+  height: 100%;
+}
+.video-discription .views {
+  font-size: var(--font-small);
+  color : var(--grey-dark-color);
 }
