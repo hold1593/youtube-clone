@@ -105,58 +105,98 @@ header .icons .fa-search {
 }
 
 /* Action Buttons */
-.action {
+.video-discription .action {
   display: flex;
   justify-content: space-around;
   margin : var(--padding) 0;
 }
-.action button {
+.video-discription .action button {
   display: flex;
   flex-direction: column;
   font-size: var(--font-small);
   color : var(--grey-dark-color);
 }
-.action button i {
+.video-discription .action button i {
   margin : 0 auto;
   margin-bottom: calc(var(--padding) / 2 );
   font-size: 16px;
 }
 
-.action button i.active{
+.video-discription .action button i.active{
   color: var(--blue-color);
 }
 
 
 /* Channel Description */
-.channel {
+.video-discription .channel {
   display : flex;
   justify-content: space-between;
   border-top: 1px solid var(--grey-light-color);
   border-bottom: 1px solid var(--grey-light-color);
   padding: calc(var(--padding) / 2) 0;
 }
-.channel .metadata {
+.video-discription .channel .metadata {
   display : flex;
   align-items: center;
 }
-.channel .metadata .profile {
+.video-discription .channel .metadata .profile {
   display: flex;
   flex-direction: column;
 }
-.channel .metadata img {
+.video-discription .channel .metadata img {
   width: var(--profile-size);
   height: var(--profile-size);
   border-radius: 50%;
 }
-.channel .metadata .profile .name {
+.video-discription .channel .metadata .profile .name {
   font-size: var(--font-medium);
 }
-.channel .metadata .profile .subscribers {
+.video-discription .channel .metadata .profile .subscribers {
   font-size: var(--font-small);
   color : var(--grey-dark-color);
 }
-.channel .subscribe {
+.video-discription .channel .subscribe {
   text-transform: uppercase;
   color: var(--red-color);
   font-size: var(--font-medium);
+}
+
+/* Up Next */
+.upNext {
+  padding: 0 var(--padding);
+}
+.upNext > .title {
+  font-size: var(--font-medium);
+  color : var(--grey-dark-color);
+  margin-bottom: calc(var(--padding)/2);
+}
+.upNext .item {
+  display: flex;
+  margin-top: var(--padding);
+}
+.upNext .item .img {
+  flex: 1 1 35%;
+  margin-right: var(--padding);
+}
+.upNext .item .img img{
+  width: 100%;
+}
+.upNext .item .info {
+  flex: 1 1 60%;
+}
+.upNext .item .moreBtn {
+  flex: 1 1 5%;
+  height: 100%;
+}
+.upNext .item .info {
+  display: flex;
+  flex-direction: column;
+}
+.upNext .item .info .title {
+  font-size: var(--font-small);
+}
+.upNext .item .info .name,
+.upNext .item .info .views {
+  font-size: var(--font-medium);
+  color : var(--grey-dark-color);
 }
