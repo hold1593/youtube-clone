@@ -12,17 +12,7 @@ Youtube 재생 화면을 clone conding 한 것 입니다.
 
 - clamp 를 이용하여 제목 옆의 토글 버튼 클릭 시 전체 제목이 보이거나 접을 수 있도록 설정 (제목이 2줄 이상일 시)
 
-- 제목 옆 토글 버튼 클릭 시 180도 회전과 천천히 움직이는 애니메이션을 추가 함
-
-```css
-.video-discription .info .titleAndBtn .moreBtn {
-  height: 100%;
-  transition: transform 300ms ease-in-out;
-}
-.video-discription .info .titleAndBtn .moreBtn.clicked {
-  transform: rotate(180deg);
-}
-```
+- 제목 옆 토글 버튼 클릭 시 300ms 로 180도 transform animation 추가 함
 
 - 좋아요 와 싫어요 버튼 클릭 시 색상 변경
 
